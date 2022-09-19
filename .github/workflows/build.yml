@@ -166,7 +166,7 @@ jobs:
         id: docker_login
         run: |
           $ErrorActionPreference = "Stop"
-          docker login -u lambdatres -p $env:DOCKER_PASSWORD
+          docker login -u zaklaus -p $env:DOCKER_PASSWORD
           if ($LASTEXITCODE -ne 0) { throw "Docker login failed." }
         env:
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
@@ -222,7 +222,7 @@ jobs:
         id: docker_login
         run: |
           $ErrorActionPreference = "Stop"
-          docker login -u lambdatres -p $env:DOCKER_PASSWORD
+          docker login -u zaklaus -p $env:DOCKER_PASSWORD
           if ($LASTEXITCODE -ne 0) { throw "Docker login failed." }
         env:
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
@@ -273,7 +273,7 @@ jobs:
         id: docker_login
         run: |
           $ErrorActionPreference = "Stop"
-          docker login -u lambdatres -p $env:DOCKER_PASSWORD
+          docker login -u zaklaus -p $env:DOCKER_PASSWORD
           if ($LASTEXITCODE -ne 0) { throw "Docker login failed." }
         env:
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
@@ -309,7 +309,7 @@ jobs:
         id: docker_login
         run: |
           $ErrorActionPreference = "Stop"
-          docker login -u lambdatres -p $env:DOCKER_PASSWORD
+          docker login -u zaklaus -p $env:DOCKER_PASSWORD
           if ($LASTEXITCODE -ne 0) { throw "Docker login failed." }
         env:
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
